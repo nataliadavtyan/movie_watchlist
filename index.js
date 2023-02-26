@@ -79,7 +79,7 @@ function removeMovie(id) {
     else if (location.pathname === "/index.html") {
         let removeMovieBtn = document.getElementById(`btn-${id}`)
         removeMovieBtn.classList.replace("remove-icon", "add-icon")
-        removeMovieBtn.setAttribute("data-add", e.target.dataset.remove)
+        removeMovieBtn.setAttribute("data-add", id)
         removeMovieBtn.removeAttribute("data-remove")
     }
 }
