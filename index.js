@@ -16,7 +16,7 @@ if (myWatchlistFromLS) {
 }
 
 // Main page / no search
-if (location.pathname === "/index.html" && movieSearchIdArray.length === 0) {
+if (location.pathname === "/index.html") {
     movieListContainer.innerHTML = startExploringMessage()
 }
 
