@@ -1,21 +1,35 @@
-# co72842b8bee9c51f839e933a
+# Movie watchlist
 
-Quick start:
+Search for movies and save them to your watchlist
 
-```
-$ npm install
-$ npm start
-````
+## Features
+Users type in the movies they want to search for and then they can save them to their Watchlist. They can add or remove movies from their Watchlist even after refreshing the page and closing the window.
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+## Demo
+![The demonstration](images/movie-watchlist.gif)
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+Test it on Netlify: https://dancing-paprenjak-379200.netlify.app/
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+## Technologies
+The project is built using:
+* HTML
+* CSS
+* JavaScript
+* API
 
-Happy Coding!
+## Technical details
+* Used API to fetch the movies.
+* Used JavaScript to render the movies and listen for clicks.
+* Connected each add and remove buttons to their movies.
+* Watchlist is saved in the localStorage.
+* Followed the design file on Figma.
+
+
+## Project status
+The project is complete.
+
+## Acknowledgements
+Movie watchlist is a solo project that was part of [the Frontend Developer Career Path at Scrimba](https://scrimba.com/learn/frontend).
+
+## Contact
+Created by [Natalia Davtyan](https://github.com/nataliadavtyan)
