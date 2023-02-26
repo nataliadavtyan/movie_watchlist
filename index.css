@@ -1,0 +1,281 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    width: 550px;
+    height: 780px;
+    background: #ffffff;
+    margin: 10px auto;
+}
+
+
+/* ********************
+        Typography
+******************** */
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.625rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+h2 > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #000000;
+    margin-right: 0.25em;
+}
+
+.message > p,
+a {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+    width: 350px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.movie-info-text {
+    font-size: 0.75rem;
+    color: #111827;
+    margin-top: 2px;
+}
+
+.movie-info-line > p,
+.watchlist-btn > p {
+    font-size: 0.75rem;
+}
+
+.movie-description > p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #6B7280;
+    line-height: 1.4;
+}
+
+/* *********************************
+    Images, icons, inputs, buttons
+********************************* */
+
+button,
+a {
+    cursor: pointer;
+}
+
+/* *** Search bar *** */
+.search-icon,
+input,
+.search-btn {
+    height: 38px;
+}
+
+input,
+.search-btn {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.search-icon {
+    padding: 8px 8px 8px 12px;
+    font-size: 20px;
+    color: #9CA3AF;
+}
+
+input {
+    border: none;
+    width: 100%;
+    color: #6B7280;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-btn {
+    padding: 0.5em 2.571em;
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border: none;
+    border-left: 1px solid #D1D5DB;
+    border-radius: 0px 6px 6px 0px;
+    color: #374151;
+}
+
+/* *** Messages *** */
+.movie-icon {
+    font-size: 70px;
+    margin-bottom: 8px;
+}
+
+/* *** Movies *** */
+.movie-poster {
+    display: block;
+    width: 100px;
+    height: 148px;
+    margin-right: 1.375em;
+    border-radius: 2.5px;
+}
+
+.star-icon {
+    color: #FEC654;
+    font-size: 12px;
+    margin-right: 0.5em;
+}
+
+.watchlist-btn {
+    background-color: #ffffff;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    border: none;
+    padding: 2px 0 2px 22px;
+    font-family: Inter, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #111827;
+    display: flex;
+    align-items: center;
+}
+
+.remove-icon {
+    background-image: url("images/remove-icon.png")
+}
+
+.add-icon {
+    background-image: url("images/add-icon.png");
+}
+
+
+/* ********************
+        Layout
+******************** */
+
+/* *** Header*** */
+header {
+    width: 100%;
+    height: 208px;
+    background: url("images/header-img-by-andre-tan-unsplash.jpg");
+    background-color: #383838;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position-y: 24%;
+    position: relative;
+}
+
+.header-text {
+    color: #ffffff;
+    display: flex;
+    height: 100%;
+    width: 462px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* *** Search bar *** */
+.search-div {
+    position: absolute;
+    width: 462px;
+    background: #ffffff;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    top: 189px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* *** Main *** */
+.main {
+    background: #ffffff;
+    width: 100%;
+    height: 572px;
+    overflow: scroll;
+}
+
+/* *** Messages *** */
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    color: #DFDDDD;
+}
+
+.message > a {
+    color: #363636;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message > a > img {
+    height: 18px;
+    margin-right: 6px;
+}
+
+/* *** Movies *** */
+.movie-list-container {
+    margin: 63px 44px 1.25em;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.movie-info {
+    width: 342px;
+}
+
+.movie-info-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75em;
+}
+
+.rating-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.divider {
+    width: 100%;
+    border-bottom: 1.5px solid #E5E7EB;
+    margin: 1.25em auto;
+}
