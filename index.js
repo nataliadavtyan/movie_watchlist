@@ -74,7 +74,7 @@ function removeMovie(id) {
         }
     }
     // Handle the button's data and icon on the search page
-    else if (location.pathname === "/index.html") {
+    else {
         let removeMovieBtn = document.getElementById(`btn-${id}`)
         removeMovieBtn.classList.replace("remove-icon", "add-icon")
         removeMovieBtn.setAttribute("data-add", id)
