@@ -8,7 +8,7 @@ Users type in the movies they want to search for and then they can save them to 
 ## Demo
 ![The demonstration](images/movie-watchlist.gif)
 
-Test it on Netlify: https://dancing-paprenjak-379200.netlify.app/
+Test it on Netlify: https://movie-watchlist-natalia-davtyan.netlify.app/
 
 ## Technologies
 The project is built using:
